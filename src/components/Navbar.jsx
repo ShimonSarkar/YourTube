@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material"; // Stack of items (row or column)
+import { Stack, Typography } from "@mui/material"; // Stack of items (row or column)
 import { Link } from "react-router-dom";
 
 import { logo } from "../utils/constants";
@@ -12,13 +12,36 @@ const Navbar = () => (
     p={2}
     sx={{
       position: "sticky",
-      background: "#000",
+      background: "#111525",
       top: 0,
       justifyContent: "space-between",
     }}
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-      <img src={logo} alt="logo" height={45} />
+      <Typography
+        sx={{
+          fontFamily: "'Poppins', sans-serif",
+          fontSize: "24pt",
+          color: "white",
+        }}
+      >
+        You
+      </Typography>
+      <Typography
+        sx={{
+          fontFamily: "'Poppins', sans-serif",
+          fontSize: "24pt",
+          color: "white",
+          backgroundColor: "#5EA2D7",
+          paddingRight: "10px",
+          paddingLeft: "10px",
+          paddingTop: "0px",
+          paddingBottom: "0px",
+          borderRadius: "1.5rem",
+        }}
+      >
+        Tube
+      </Typography>
     </Link>
     <SearchBar />
   </Stack>

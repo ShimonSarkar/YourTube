@@ -35,7 +35,7 @@ const Feed = () => {
           variant="body2"
           sx={{ mt: 1.5, color: "#fff" }}
         >
-          Copyright © 2022 JSM Media
+          Copyright © 2022 SKS
         </Typography>
       </Box>
 
@@ -46,7 +46,7 @@ const Feed = () => {
           mb={2}
           sx={{ color: "white" }}
         >
-          {selectedCategory} <span style={{ color: "#FC1503" }}>videos</span>
+          {selectedCategory} <span style={{ color: "white" }}>Videos</span>
         </Typography>
 
         <Videos videos={videos} />

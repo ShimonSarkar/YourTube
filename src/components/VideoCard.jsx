@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Typography, Card, CardContent, CardMedia } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import "./videocard.css";
 
 import {
   demoThumbnailUrl,
@@ -32,7 +33,7 @@ const VideoCard = ({
         sx={{ width: { xs: "100%", sm: "358px" }, height: 180 }}
       />
     </Link>
-    <CardContent sx={{ backgroundColor: "#1E1E1E", height: "106px" }}>
+    <CardContent sx={{ height: "106px" }} className="videoCard">
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <Typography variant="subtitle1" fontWeight="bold" color="#FFF">
           {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
