@@ -20,24 +20,25 @@ const Navbar = () => (
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <Typography
         sx={{
-          fontFamily: "'Poppins', sans-serif",
+          fontFamily: "'Oswald', sans-serif",
           fontSize: "24pt",
           color: "white",
+          paddingRight: "4px",
         }}
       >
-        You
+        Your
       </Typography>
       <Typography
         sx={{
-          fontFamily: "'Poppins', sans-serif",
+          fontFamily: "'Oswald', sans-serif",
           fontSize: "24pt",
           color: "white",
           backgroundColor: "#5EA2D7",
-          paddingRight: "10px",
-          paddingLeft: "10px",
+          paddingRight: "4px",
+          paddingLeft: "4px",
           paddingTop: "0px",
           paddingBottom: "0px",
-          borderRadius: "1.5rem",
+          borderRadius: "0.75rem",
         }}
       >
         Tube
